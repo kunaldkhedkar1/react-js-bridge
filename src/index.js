@@ -1,11 +1,19 @@
-import React, { Component, Fragment } from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom'
+import App from './App'
 
-class App extends Component {
-  render() {
-    return (<div>Hi</div>);
-  }
+
+var components = {
+  'App': <App/>,
 }
-export default App;
-const wrapper = document.getElementById("root");
-wrapper ? ReactDOM.render(<App />, wrapper) : false;
+// var nodes = [];
+var render = function(component, props, targetNode, callback) {
+  var ReactElement = React.cloneElement(components[component], props);
+  console.log('element', ReactElement)
+  // let Cmp =  components[component]
+  ReactDOM.render(ReactElement , targetNode, callback);
+  // nodes.push(targetNode);
+  return App;
+}
+window.renderApp = render;
+export default render;
