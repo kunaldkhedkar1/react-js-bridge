@@ -1,15 +1,15 @@
 {
-  "name": "myboilerplate",
+  "name": "react-js-bridge",
   "version": "1.0.0",
-  "description": "",
+  "description": "Bridge for using react components in vanilla js",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development --hot",
     "build": "webpack"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Kunal Khedkar",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
@@ -34,5 +34,13 @@
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
     "redux-saga": "^0.16.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunaldkhedkar1/react-js-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kunaldkhedkar1/react-js-bridge/issues"
+  },
+  "homepage": "https://github.com/kunaldkhedkar1/react-js-bridge#readme"
 }
