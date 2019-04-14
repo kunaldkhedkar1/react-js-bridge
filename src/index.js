@@ -4,16 +4,12 @@ import App from './App'
 
 
 var components = {
-  'App': <App/>,
+  App: <App/>,
 }
-// var nodes = [];
 var render = function(component, props, targetNode, callback) {
-  var ReactElement = React.cloneElement(components[component], props);
-  console.log('element', ReactElement)
-  // let Cmp =  components[component]
+  var ReactElement = React.cloneElement(component, props);
   ReactDOM.render(ReactElement , targetNode, callback);
-  // nodes.push(targetNode);
-  return App;
+  return ReactElement;
 }
-window.renderApp = render;
+window.RCR = {components,render};
 export default render;
