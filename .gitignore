@@ -2,3 +2,5 @@ node_modules/
 package-json.lock
 dist/
 package-lock.json
+.DS_Store
+.idea/
