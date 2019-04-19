@@ -16,6 +16,7 @@
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
+    "demo-header": "git+ssh://git@github.com/kunaldkhedkar1/demo-header.git",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "prop-types": "^15.6.2",
